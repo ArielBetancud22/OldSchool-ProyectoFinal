@@ -32,4 +32,16 @@ public class Celular {
         this.camara = camara;
         this.precio = precio;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Celular{");
+        sb.append("marca='").append(marca).append('\'');
+        sb.append(", modelo='").append(modelo).append('\'');
+        sb.append(", procesador='").append(procesador).append('\'');
+        sb.append(", camara='").append(camara).append('\'');
+        sb.append(", precio=").append(precio);
+        sb.append('}');
+        return sb.toString();
+    }
 }
