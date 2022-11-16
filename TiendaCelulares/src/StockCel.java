@@ -12,5 +12,11 @@ public class StockCel {
     public static ArrayList<Celular> getListaMotorola() {
         return listaMotorola;
     }
+
+    public static void init() {
+        llenarMotorola();
+
+    }
+
 }
 
