@@ -31,7 +31,5 @@ public class MenuItemMostrar {
         } else {
             System.out.println("Elegiste volver");
         }
-
-
     }
 }
