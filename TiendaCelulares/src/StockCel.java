@@ -11,12 +11,9 @@ public class StockCel {
 
     private static ArrayList<Celular> listaXiaomi = new ArrayList<>();
 
-<<<<<<< HEAD
 
     private static ArrayList<Celular> listaSamsung = new ArrayList<>();
 
-=======
->>>>>>> 508ff3e41caa7eeb0a0fc340c49e9a9876f93d80
     private static void llenarMotorola() {
         Celular cel1 = new Celular("Motorola", "Moto g200", "Snapdragon 880", "108mp x 13mp", 90000);
         Celular cel2 = new Celular("Motorola", "Moto g71", "Snapdragon 865", "50mp x 10", 65000);
@@ -60,6 +57,8 @@ public class StockCel {
         listaLg.add(cel3);
         listaLg.add(cel4);
         listaLg.add(cel5);
+
+
     }
 
     public static void llenarHuawei() {
@@ -90,10 +89,10 @@ public class StockCel {
         listaXiaomi.add(cel3);
         listaXiaomi.add(cel4);
         listaXiaomi.add(cel5);
+
     }
 
 
-<<<<<<< HEAD
     public static void llenarSamsung() {
         Celular cel1 = new Celular("Samsung", "Galaxy A52-", "Procesador de Octa Core con 6gb de Ram", "64mp + 12mp + 5mp", 65.000);
         Celular cel2 = new Celular("Samsung Galaxy A12-", "Galaxy A12", "Procesador Octa Core con 4gb de RAM", "Camara Quad de 48mp", 40.000);
@@ -112,8 +111,6 @@ public class StockCel {
     }
 
 
-=======
->>>>>>> 508ff3e41caa7eeb0a0fc340c49e9a9876f93d80
     public static ArrayList<Celular> getListaMotorola() {
         return listaMotorola;
     }
@@ -123,17 +120,13 @@ public class StockCel {
     }
 
     public static ArrayList<Celular> getListaLg() {
-<<<<<<< HEAD
 
-=======
->>>>>>> 508ff3e41caa7eeb0a0fc340c49e9a9876f93d80
         return listaLg;
     }
 
     public static ArrayList<Celular> getListaHuawei() {
         return listaHuawei;
     }
-<<<<<<< HEAD
 
     public static ArrayList<Celular> getListaXiaomi() {
         return listaXiaomi;
@@ -143,12 +136,6 @@ public class StockCel {
         return  listaSamsung;
     }
 
-=======
-
-    public static ArrayList<Celular> getListaXiaomi() {
-        return listaXiaomi;
-    }
->>>>>>> 508ff3e41caa7eeb0a0fc340c49e9a9876f93d80
 
     public static void init() {
         llenarMotorola();
@@ -156,16 +143,12 @@ public class StockCel {
         llenarLg();
         llenarHuawei();
         llenarXioami();
-<<<<<<< HEAD
         llenarSamsung();
 
 
     }
 
 
-=======
-    }
->>>>>>> 508ff3e41caa7eeb0a0fc340c49e9a9876f93d80
 }
 
 
