@@ -7,6 +7,7 @@ public class Menu {
         System.out.println("3. LG");
         System.out.println("4.Huawei");
         System.out.println("5. Xiaomi");
+        System.out.println("6.Samsung");
         Scanner entrada = new Scanner(System.in);
         System.out.println("Elija opcion");
         Integer opcion = entrada.nextInt();
@@ -33,6 +34,10 @@ public class Menu {
 
             case 5: MenuItemMostrar menuXiaomi = new MenuItemMostrar(StockCel.getListaXiaomi());
             menuXiaomi.mostrarLista();
+            break;
+
+            case 6: MenuItemMostrar menuSamnsung = new MenuItemMostrar(StockCel.getListaSamsung());
+            menuSamnsung.mostrarLista();
             break;
         }
     }
