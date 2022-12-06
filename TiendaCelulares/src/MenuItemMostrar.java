@@ -10,8 +10,6 @@ public class MenuItemMostrar {
     }
 
 
-
-
     public void mostrarLista() {
         Integer contador = 1;
         System.out.println("Elija Opcion");
@@ -27,9 +25,17 @@ public class MenuItemMostrar {
         Integer opcion = entrada.nextInt();
         opcion--;
         if (opcion >= 0 && opcion < this.lista.size()) {
+            Celular celularElegido = this.lista.get(opcion);
             System.out.println("Elegiste el celular ");
-            System.out.println(this.lista.get(opcion));
-
+            System.out.println(celularElegido);
+            System.out.println("Desea agregar este celular al carrito");
+            System.out.println("1.Si");
+            System.out.println("2.No");
+            Integer opcion2 = entrada.nextInt();
+            if (opcion2 == 1) {
+                Carrito.agregar(celularElegido);
+                System.out.println(new Carrito());
+            }
 
         } else {
             System.out.println("Elegiste volver");

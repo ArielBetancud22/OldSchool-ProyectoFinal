@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
 public class Menu {
-    public static void display(){
+    public static int display(){
         System.out.println("1.Motorola");
         System.out.println("2.Apple");
         System.out.println("3. LG");
         System.out.println("4.Huawei");
         System.out.println("5. Xiaomi");
         System.out.println("6.Samsung");
+        System.out.println("7.Salir");
         Scanner entrada = new Scanner(System.in);
         System.out.println("Elija opcion");
         Integer opcion = entrada.nextInt();
@@ -40,6 +41,7 @@ public class Menu {
             menuSamnsung.mostrarLista();
             break;
         }
+        return opcion;
     }
 }
 
