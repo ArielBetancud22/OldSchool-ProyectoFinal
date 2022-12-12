@@ -6,13 +6,16 @@ public class Main {
             boolean salir = false;
             while (!salir) {
                 int opcion = Menu.display();
-                if (opcion == 7) {
+                if (opcion == 8) {
                     salir = true;
                 }
             }
 
+
         } else {
             System.out.println("Login Fallido");
+
         }
+
     }
 }

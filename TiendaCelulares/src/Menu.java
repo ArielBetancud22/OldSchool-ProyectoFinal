@@ -8,10 +8,12 @@ public class Menu {
         System.out.println("4.Huawei");
         System.out.println("5. Xiaomi");
         System.out.println("6.Samsung");
-        System.out.println("7.Salir");
+        System.out.println("7.Pagar");
+        System.out.println("8.Salir");
         Scanner entrada = new Scanner(System.in);
         System.out.println("Elija opcion");
         Integer opcion = entrada.nextInt();
+
 
         switch (opcion) {
             case 1:
@@ -39,6 +41,9 @@ public class Menu {
 
             case 6: MenuItemMostrar menuSamnsung = new MenuItemMostrar(StockCel.getListaSamsung());
             menuSamnsung.mostrarLista();
+            break;
+
+            case 7 : MenuDePago.pagar();
             break;
         }
         return opcion;
