@@ -40,4 +40,8 @@ public class Carrito {
         return sb.toString();
     }
 
+    static void clear(){
+        carrito.clear();
+    }
+
 }
